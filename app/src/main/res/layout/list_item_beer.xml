@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="beer"
+            type="com.example.data.model.Beer" />
+        <variable
+            name="clickListener"
+            type="com.example.beerapp.adapter.BeerClickListener"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/backgroundColor"
+        android:layout_marginBottom="@dimen/list_margin_top"
+        android:onClick="@{() -> clickListener.onClick(beer)}">
+
+        <ImageView
+            android:id="@+id/beer_image"
+            android:layout_width="@dimen/list_image"
+            android:layout_height="@dimen/list_image"
+            android:layout_marginStart="@dimen/medium_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginBottom="@dimen/small_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            tools:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/beer_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/medium_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/beer_image"
+            app:layout_constraintTop_toTopOf="@+id/beer_image"
+            tools:text="@string/beer_name_example"
+            android:textSize="@dimen/title_text_size"
+            android:fontFamily="sans-serif"
+            android:textColor="?attr/textColor"/>
+
+        <TextView
+            android:id="@+id/beer_tagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/medium_size"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/beer_image"
+            app:layout_constraintTop_toBottomOf="@+id/beer_name"
+            android:textColor="?attr/textColorMild"
+            tools:text="@string/beer_tagline_example" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

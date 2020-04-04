@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for the splash screen -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="background">@drawable/app_background</item>
+        <item name="textColor">@color/black</item>
+        <item name="backgroundColor">@color/background</item>
+        <item name="textColorMild">@color/text_color_dark</item>
+        <item name="logoutBackground">@color/beige</item>
+        <item name="logoutText">@color/brown</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="background">@drawable/app_background_dark</item>
+        <item name="textColor">@color/white</item>
+        <item name="backgroundColor">@color/background_dark</item>
+        <item name="textColorMild">@color/text_color</item>
+        <item name="logoutBackground">@color/brown_grey</item>
+        <item name="logoutText">@color/beige</item>
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryDark">@color/primary_darker</item>
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+</resources>

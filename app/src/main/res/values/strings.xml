@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Beer App</string>
+    <string name="version">1.0.1</string>
+    <string name="search_by_name">Enter beer name</string>
+    <string name="beer_tagline_example">Post Modern Classic. Spiky. Tropical. Hoppy.</string>
+    <string name="beer_name_example">Punk IPA 2007 - 2010</string>
+    <string name="welcome">Welcome to the world of beer!</string>
+    <string name="beer_description_example">Our flagship beer that kick started the craft beer
+        revolution. This is James and Martin`s original take on an American IPA, subverted with
+        punchy New Zealand hops. Layered with new world hops to create an all-out riot of grapefruit,
+        pineapple and lychee before a spiky, mouth-puckering bitter finish.</string>
+    <string name="alcohol_by_volume">Alcohol By Volume</string>
+    <string name="int_bitterness">International Bitterness Units</string>
+    <string name="ebc">European Brewery Convention</string>
+    <string name="ph">pH</string>
+    <string name="brewers_tips_title">Tips from brewers:</string>
+    <string name="date_example">04/2007</string>
+    <string name="tips_example">While it may surprise you, this version of Punk IPA isn`t dry hopped
+        but still packs a punch! To make the best of the aroma hops make sure they are fully
+        submerged and add them just before knock out for an intense hop hit.</string>
+    <string name="yeast">Yeast</string>
+    <string name="hops">Hops</string>
+    <string name="malt">Malt</string>
+    <string name="food">Food</string>
+    <string name="enter_food">Enter food...</string>
+    <string name="enter_yeast">Enter yeast...</string>
+    <string name="enter_hops">Enter hops...</string>
+    <string name="enter_malt">Enter malt...</string>
+    <string name="ibu">IBU</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="abv">ABV</string>
+    <string name="ebc_short">EBC</string>
+    <string name="brewed">Brewed</string>
+    <string name="after">after</string>
+    <string name="before">before</string>
+    <string name="filters">Filters</string>
+    <string name="clear">Clear</string>
+    <string name="food_pairings">Food pairings:</string>
+    <string name="foods_example">Spicy carne asada with a pico de gallo sauce,
+        Shredded chicken tacos with a mango chilli lime salsa,
+        Cheesecake with a passion fruit swirl sauce</string>
+    <string name="favourites">Favourites</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="theme">Dark mode</string>
+    <string name="logout">Logout</string>
+    <string name="organization">Imperia Online 2020 ©</string>
+    <string name="details">Beer Details</string>
+    <string name="title">Beers</string>
+    <string name="random_from">Random from favourites</string>
+    <string name="beer_deleted">Beer removed from favourites.</string>
+    <string name="beer_added">Beer added to favourites.</string>
+    <string name="beer_not_added">Maximum number of favourite beers reached!</string>
+    <string name="no_fav_beer">No favourite beers to get a random from!</string>
+    <string name="notification_title">Hey! Want a drink?</string>
+    <string name="notification_text">It`s been a while! Come and check out our fresh cold beers!</string>
+    <string name="empty_fav_beers">No favourite beers added!</string>
+    <string name="empty_beers">No beers to show!</string>
+</resources>

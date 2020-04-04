@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beer App</string>
+    <string name="version">1.0.1</string>
+    <string name="search_by_name">Въведете име на бира</string>
+    <string name="beer_tagline_example">Post Modern Classic. Spiky. Tropical. Hoppy.</string>
+    <string name="beer_name_example">Punk IPA 2007 - 2010</string>
+    <string name="welcome">Добре дошли в света на бирата!</string>
+    <string name="beer_description_example">Our flagship beer that kick started the craft beer
+        revolution. This is James and Martin`s original take on an American IPA, subverted with
+        punchy New Zealand hops. Layered with new world hops to create an all-out riot of grapefruit,
+        pineapple and lychee before a spiky, mouth-puckering bitter finish.</string>
+    <string name="alcohol_by_volume">Алкохол по обем</string>
+    <string name="int_bitterness">Горчиви единици</string>
+    <string name="ebc">Европейска пивоварна конвенция</string>
+    <string name="ph">pH</string>
+    <string name="brewers_tips_title">Съвети от пивовари:</string>
+    <string name="date_example">04/2007</string>
+    <string name="tips_example">While it may surprise you, this version of Punk IPA isn`t dry hopped
+        but still packs a punch! To make the best of the aroma hops make sure they are fully
+        submerged and add them just before knock out for an intense hop hit.</string>
+    <string name="yeast">Мая</string>
+    <string name="hops">Хмел</string>
+    <string name="malt">Малц</string>
+    <string name="food">Храни</string>
+    <string name="enter_food">Въведете храна...</string>
+    <string name="enter_yeast">Въведете мая...</string>
+    <string name="enter_hops">Въведете хмел...</string>
+    <string name="enter_malt">Въведете малц...</string>
+    <string name="ibu">IBU</string>
+    <string name="from">от</string>
+    <string name="to">до</string>
+    <string name="abv">ABV</string>
+    <string name="ebc_short">EBC</string>
+    <string name="brewed">Произведена</string>
+    <string name="after">след</string>
+    <string name="before">преди</string>
+    <string name="filters">Филтри</string>
+    <string name="clear">Изчисти</string>
+    <string name="food_pairings">Подходяща с:</string>
+    <string name="foods_example">Spicy carne asada with a pico de gallo sauce,
+        Shredded chicken tacos with a mango chilli lime salsa,
+        Cheesecake with a passion fruit swirl sauce</string>
+    <string name="favourites">Любими</string>
+    <string name="home">Начало</string>
+    <string name="settings">Настройки</string>
+    <string name="notifications">Известия</string>
+    <string name="theme">Тъмна тема</string>
+    <string name="logout">Отписване</string>
+    <string name="organization">Imperia Online 2020 ©</string>
+    <string name="details">Детайли за бира</string>
+    <string name="title">Бири</string>
+    <string name="random_from">Бира от любими</string>
+    <string name="beer_deleted">Изтрита от любими.</string>
+    <string name="beer_added">Добавена към любими.</string>
+    <string name="beer_not_added">Достигнат е максималният брой любими бири!</string>
+    <string name="no_fav_beer">Няма налични любими бири!</string>
+    <string name="notification_title">Хей! Една бира?</string>
+    <string name="notification_text">Време е! Ела и виж нашите свежи и студени бири!</string>
+    <string name="empty_fav_beers">Няма добавени любими бири!</string>
+    <string name="empty_beers">Няма налични бири!</string>
+</resources>

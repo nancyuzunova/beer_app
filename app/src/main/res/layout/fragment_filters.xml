@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.domain.controller.FiltersViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/yeastTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:text="@string/yeast"
+                android:textColor="?attr/textColor"
+                android:textSize="@dimen/filters_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/clear_yeast"
+                android:layout_width="@dimen/field_height"
+                android:layout_height="@dimen/field_height"
+                app:srcCompat="@drawable/clear_black"
+                app:layout_constraintTop_toBottomOf="@+id/yeastTextView"
+                app:layout_constraintStart_toEndOf="@+id/yeastEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size" />
+
+            <EditText
+                android:id="@+id/yeastEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/field_height"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size"
+                android:background="@color/white"
+                android:hint="@string/enter_yeast"
+                android:inputType="text"
+                android:textSize="@dimen/details_content_size"
+                app:layout_constraintEnd_toStartOf="@+id/clear_yeast"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yeastTextView" />
+
+            <TextView
+                android:id="@+id/hopsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:text="@string/hops"
+                android:textColor="?attr/textColor"
+                android:textSize="@dimen/filters_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yeastEditText" />
+
+            <ImageView
+                android:id="@+id/clear_hops"
+                android:layout_width="@dimen/field_height"
+                android:layout_height="@dimen/field_height"
+                app:srcCompat="@drawable/clear_black"
+                app:layout_constraintTop_toBottomOf="@+id/hopsTextView"
+                app:layout_constraintStart_toEndOf="@+id/hopsEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size" />
+
+            <EditText
+                android:id="@+id/hopsEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/field_height"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size"
+                android:background="@color/white"
+                android:hint="@string/enter_hops"
+                android:inputType="text"
+                android:textSize="@dimen/details_content_size"
+                app:layout_constraintEnd_toStartOf="@id/clear_hops"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hopsTextView" />
+
+            <TextView
+                android:id="@+id/maltTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:text="@string/malt"
+                android:textColor="?attr/textColor"
+                android:textSize="@dimen/filters_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hopsEditText" />
+
+            <ImageView
+                android:id="@+id/clear_malt"
+                android:layout_width="@dimen/field_height"
+                android:layout_height="@dimen/field_height"
+                app:srcCompat="@drawable/clear_black"
+                app:layout_constraintTop_toBottomOf="@+id/maltTextView"
+                app:layout_constraintStart_toEndOf="@+id/maltEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size" />
+
+            <EditText
+                android:id="@+id/maltEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/field_height"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size"
+                android:background="@color/white"
+                android:hint="@string/enter_malt"
+                android:inputType="text"
+                android:textSize="@dimen/details_content_size"
+                app:layout_constraintEnd_toStartOf="@id/clear_malt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maltTextView" />
+
+            <TextView
+                android:id="@+id/foodTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:text="@string/food"
+                android:textColor="?attr/textColor"
+                android:textSize="@dimen/filters_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maltEditText" />
+
+            <ImageView
+                android:id="@+id/clear_food"
+                android:layout_width="@dimen/field_height"
+                android:layout_height="@dimen/field_height"
+                app:srcCompat="@drawable/clear_black"
+                app:layout_constraintTop_toBottomOf="@+id/foodTextView"
+                app:layout_constraintStart_toEndOf="@+id/foodEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size" />
+
+            <EditText
+                android:id="@+id/foodEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/field_height"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/small_size"
+                android:background="@color/white"
+                android:hint="@string/enter_food"
+                android:inputType="text"
+                android:textSize="@dimen/details_content_size"
+                app:layout_constraintEnd_toStartOf="@id/clear_food"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/foodTextView" />
+
+            <LinearLayout
+                android:id="@+id/ibuFilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/foodEditText">
+
+                <TextView
+                    android:id="@+id/ibuText"
+                    android:layout_width="@dimen/margin_bottom"
+                    android:layout_height="match_parent"
+                    android:text="@string/ibu"
+                    android:textColor="?attr/textColor"
+                    android:textSize="@dimen/filters_text" />
+
+                <TextView
+                    android:id="@+id/ibuFromText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/medium_size"
+                    android:text="@string/from"
+                    android:textColor="?attr/textColor"
+                    android:textSize="@dimen/filters_border_text" />
+
+                <EditText
+                    android:id="@+id/ibuFromValue"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:background="@color/white"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/filters_border_text" />
+
+                <TextView
+                    android:id="@+id/ibuToText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:text="@string/to"
+                    android:textColor="?attr/textColor"
+                    android:textSize="@dimen/filters_border_text" />
+
+                <EditText
+                    android:id="@+id/ibuToValue"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:background="@color/white"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/filters_border_text" />
+
+                <ImageView
+                    android:id="@+id/clear_IBU"
+                    android:layout_width="@dimen/field_height"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/clear_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ebcFilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/abvFilter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size">
+
+                <TextView
+                    android:id="@+id/ebcText"
+                    android:layout_width="@dimen/margin_bottom"
+                    android:layout_height="match_parent"
+                    android:text="@string/ebc_short"
+                    android:textSize="@dimen/filters_text"
+                    android:textColor="?attr/textColor"/>
+
+                <TextView
+                    android:id="@+id/ebcFromText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/medium_size"
+                    android:text="@string/from"
+                    android:textSize="@dimen/filters_border_text"
+                    android:textColor="?attr/textColor"/>
+
+                <EditText
+                    android:id="@+id/ebcFromValue"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textSize="@dimen/filters_border_text"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/ten_dp"/>
+
+                <TextView
+                    android:id="@+id/ebcToText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:text="@string/to"
+                    android:textSize="@dimen/filters_border_text"
+                    android:textColor="?attr/textColor"/>
+
+                <EditText
+                    android:id="@+id/ebcToValue"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textSize="@dimen/filters_border_text"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/ten_dp"/>
+
+                <ImageView
+                    android:id="@+id/clear_EBC"
+                    android:layout_width="@dimen/field_height"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/clear_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/abvFilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/ibuFilter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size">
+
+                <TextView
+                    android:id="@+id/abvText"
+                    android:layout_width="@dimen/margin_bottom"
+                    android:layout_height="match_parent"
+                    android:text="@string/abv"
+                    android:textSize="@dimen/filters_text"
+                    android:textColor="?attr/textColor"/>
+
+                <TextView
+                    android:id="@+id/abvFromText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/medium_size"
+                    android:text="@string/from"
+                    android:textSize="@dimen/filters_border_text"
+                    android:textColor="?attr/textColor"/>
+
+                <EditText
+                    android:id="@+id/abvFromValue"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textSize="@dimen/filters_border_text"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/ten_dp"/>
+
+                <TextView
+                    android:id="@+id/abvToText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:text="@string/to"
+                    android:textSize="@dimen/filters_border_text"
+                    android:textColor="?attr/textColor"/>
+
+                <EditText
+                    android:id="@+id/abvToValue"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textSize="@dimen/filters_border_text"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/ten_dp"/>
+
+                <ImageView
+                    android:id="@+id/clear_ABV"
+                    android:layout_width="@dimen/field_height"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/clear_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/brewedFilter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/ebcFilter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size">
+
+                <TextView
+                    android:id="@+id/brewedText"
+                    android:layout_width="@dimen/version_top_margin"
+                    android:layout_height="match_parent"
+                    android:text="@string/brewed"
+                    android:textSize="@dimen/filters_text"
+                    android:textColor="?attr/textColor"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/brewedDates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/pageMargin">
+
+                    <TextView
+                        android:id="@+id/afterText"
+                        android:layout_width="@dimen/date_width"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="@string/after"
+                        android:textSize="@dimen/filters_border_text"
+                        android:textColor="?attr/textColor"
+                        android:layout_marginStart="@dimen/details_image_top_margin"/>
+
+                    <TextView
+                        android:id="@+id/afterValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/afterText"
+                        app:layout_constraintEnd_toStartOf="@+id/clear_after"
+                        android:background="@color/white"
+                        android:textSize="@dimen/filters_border_text"
+                        android:layout_marginStart="@dimen/pageMargin"/>
+
+                    <ImageView
+                        android:id="@+id/clear_after"
+                        android:layout_width="@dimen/field_height"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/clear_black"
+                        app:layout_constraintStart_toEndOf="@+id/afterValue"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/clear_before"
+                        android:layout_width="@dimen/field_height"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/clear_black"
+                        app:layout_constraintStart_toEndOf="@+id/beforeValue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/beforeText"
+                        android:layout_width="@dimen/date_width"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/afterText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="@string/before"
+                        android:textSize="@dimen/filters_border_text"
+                        android:textColor="?attr/textColor"
+                        android:layout_marginStart="@dimen/details_image_top_margin"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"/>
+
+                    <TextView
+                        android:id="@+id/beforeValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/afterValue"
+                        app:layout_constraintStart_toEndOf="@+id/beforeText"
+                        app:layout_constraintEnd_toStartOf="@+id/clear_before"
+                        android:layout_marginStart="@dimen/pageMargin"
+                        android:textSize="@dimen/filters_border_text"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/ten_dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
